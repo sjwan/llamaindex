@@ -16,7 +16,6 @@ import sys
 logging.basicConfig(stream=sys.stdout, level=logging.DEBUG)
 logging.getLogger().addHandler(logging.StreamHandler(stream=sys.stdout))
 
-from llama_index.postprocessor.jinaai_rerank import JinaRerank
 
 
 ollama_embedding = OllamaEmbedding(
