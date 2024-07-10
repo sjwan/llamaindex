@@ -17,7 +17,7 @@ ollama_embedding = OllamaEmbedding(
 )
 
 
-documents = SimpleDirectoryReader("./data1").load_data()
+documents = SimpleDirectoryReader(input_files=["/Users/hawk/workspace/projects/llm/index100/llamaindex/ollama/data1/a2.md"]).load_data()
 
 db = chromadb.PersistentClient(path="./chroma_db", )
 

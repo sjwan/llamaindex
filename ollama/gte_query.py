@@ -51,6 +51,6 @@ Settings.llm = llm
 
 query_engine = index.as_query_engine(similarity_top_k=10,)
 
-response = query_engine.query(" 采购项目编号是什么？")
+response = query_engine.query("项目编号多少？")
 
 print(response)
